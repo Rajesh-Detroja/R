@@ -8,3 +8,5 @@ The cache duration can be increased through the cache credential helper bundled 
 ```bash
 git config --global credential.helper 'cache --timeout 3600'
 ```
+
++ **Reference:** https://rstudio.cloud/learn/guide#gitDetails 
