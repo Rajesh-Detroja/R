@@ -1,5 +1,1 @@
-print("Hello World!")
-
-print("How are you doing?")
-
-print("There we go!")
+sum(2,7,5)
