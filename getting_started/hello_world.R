@@ -1,2 +1,2 @@
-my_words <- "Hello, World!"
-print (my_words)
+my_string <- "Hello, World!"
+print (my_string)
