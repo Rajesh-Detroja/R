@@ -2,6 +2,14 @@
 ?reserved
 
 
+# `TRUE` vs `True` as a variable name
+TRUE <- "Hello, World!"
+print(TRUE)
+
+True <- "Rajesh Detroja"
+print(True)
+
+
 # Assignment using equal operator
 var_num = c(0,2.5,8,10,200)
 
