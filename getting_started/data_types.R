@@ -1,193 +1,200 @@
+# creating a empty with `vector()` function
+var_vec <- vector()
+print(var_vec)
+
+# --------------------------------------------------
+
 # numeric series without decimals
-num_ser <- c(2,6,8)
-num_ser
+var_x <- c(2,6,8)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(num_ser)
+class(var_x)
 
 # --------------------------------------------------
 
 # numeric series with decimals
-num_ser_dec <- c(2.2, 6.4, 8.6)
-num_ser_dec
+var_x <- c(2.2, 6.4, 8.6)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(num_ser_dec)
+class(var_x)
 
 # --------------------------------------------------
 
 # creating integer variable
-int_var <- as.integer(2)
-int_var
+var_x <- as.integer(2)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(int_var)
+class(var_x)
 
 # --------------------------------------------------
 
 # creating an integer variable by appending an L suffix
-int_var_L <- 2L
-int_var_L
+var_x <- 2L
+print(var_x)
 
 # checking data type of variable with "class" function
-class(int_var_L)
+class(var_x)
 
 # --------------------------------------------------
 
 # coerce a numeric decimals value into an integer variable
-int_var_num <- as.integer(2.5)
-int_var_num
+var_x <- as.integer(2.5)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(int_var_num)
+class(var_x)
 
 # --------------------------------------------------
 
 # coerce a string of decimal value into an integer variable
-int_var_str <- as.integer("2.5")
-int_var_str
+var_x <- as.integer("2.5")
+print(var_x)
 
 # checking data type of variable with "class" function
-class(int_var_str)
+class(var_x)
 
 # --------------------------------------------------
 
 # coerce a string of non-decimal value into an integer variable
-int_var_nd_str <- as.integer("Rajesh")
-int_var_nd_str
+var_x <- as.integer("Rajesh")
+print(var_x)
 
 # checking data type of variable with "class" function
-class(int_var_nd_str)
+class(var_x)
 
 # --------------------------------------------------
 
 # Logical values into an integer variable
-int_var_true <- as.integer(TRUE)
-int_var_true
+var_x <- as.integer(TRUE)
+print(var_x)
 
-int_var_false <- as.integer(FALSE)
-int_var_false
+var_y <- as.integer(FALSE)
+print(var_y)
 
 # checking data type of variable with "class" function
-class(int_var_true)
-class(int_var_false)
+class(var_x)
+class(var_y)
 
 # --------------------------------------------------
 
 # creating an complex variable
-comp_var <- 1 + 0i
-comp_var
+var_x <- 1 + 0i
+print(var_x)
 
 # checking data type of variable with "class" function
-class(comp_var)
+class(var_x)
 
 # --------------------------------------------------
 
 # creating an complex variable with `c()` function
-comp_var_c <- c(1+0i, 2+4i)
-comp_var_c
+var_x <- c(1+0i, 2+4i)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(comp_var_c)
+class(var_x)
 
 # --------------------------------------------------
 
 # creating an character variable
-char_var <- "This is a string"
-char_var
+var_x <- "This is a string"
+print(var_x)
 
 # checking data type of variable with "class" function
-class(char_var)
+class(var_x)
 
 # --------------------------------------------------
 
 # everything inside `""` will be considered as character
-char_var_num <- c("3.14")
-char_var_num
+var_x <- c("3.14")
+print(var_x)
 
 # checking data type of variable with "class" function
-class(char_var)
+class(var_x)
 
 # --------------------------------------------------
 
-# character + Numbers produces a whole character variable
-char_var_c_n <- c("string", 2, 3.14, 6)
-char_var_c_n
+# character + numbers produces a whole character variable
+var_x <- c("string", 2, 3.14, 6)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(char_var)
+class(var_x)
 
 # --------------------------------------------------
 
 # space within `""` makes a different character variable
-char_var_space <- "string "
-char_var_no_space <- "string"
+var_x <- "string "
+var_y <- "string"
 
 # `char_var_space` is equal to `char_var_no_space`?
-char_var_space == char_var_no_space
+var_x == var_y
 
 # --------------------------------------------------
 
 # creating a character variable with `as.character()` function
-char_var_as <- as.character(3.14)
-char_var_as
+var_x <- as.character(3.14)
+print(var_x)
 
 # checking data type of variable with "class" function
-class(char_var_as)
+class(var_x)
 
 # --------------------------------------------------
 
 # two character variables can be concatenated with the `paste()` function
-char_fname <- "Rajesh"
-char_lname <- "Detroja"
+var_x <- "Rajesh"
+var_y <- "Detroja"
 
-paste(char_fname, char_lname)
+paste(var_x, var_y)
 
 # --------------------------------------------------
 
 # creating a character variable with `sprintf()` function
-char_var_sprintf <- sprintf("Computer of %s has %dTb of space!", "Rajesh", 1)
-char_var_sprintf
+var_x <- sprintf("Computer of %s has %dTb of space!", "Rajesh", 1)
+print(var_x)
 
 # --------------------------------------------------
 
 # applying a `substr()` function on character variable to extract sub-string
-char_var_substr <- substr("I am Rajesh Detroja!", start=6, stop=19)
-char_var_substr
+var_x <- substr("I am Rajesh Detroja!", start=6, stop=19)
+print(var_x)
 
 # --------------------------------------------------
 
 # replacing first occurrence of word "Detroja" with "Patel" by using 'sub()' function
-char_var_sub <- "I am Rajesh Detroja"
-sub("Detroja","Patel", char_var_sub)
+var_x <- "I am Rajesh Detroja"
+sub("Detroja","Patel", var_x)
 
 # --------------------------------------------------
 
 # creating a logical variable
-logic_var_true <- TRUE
-logic_var_false <- FALSE
-logic_var_true
-logic_var_false
+var_x <- TRUE
+var_y <- FALSE
+
+print(var_x)
+print(var_y)
 
 # checking data type of variable with "class" function
-class(logic_var_true)
-class(logic_var_false)
+class(var_x)
+class(var_y)
 
 # --------------------------------------------------
 
 # comparing numeric variable
-num_var_1 <- 10
-num_var_2 <- 20
-num_var_3 <- 30
+var_x <- 10
+var_y <- 20
+var_z <- 30
 
-# is `num_var_1` and `num_var_2` is equal?
-num_var_1 == num_var_2
+# is `var_x` and `var_y` is equal?
+var_x == var_y
 
-## is `num_var_3 - num_var_2` is equal to `num_var_1`
-(num_var_3 - num_var_2) == num_var_1
+## is `var_z - var_y` is equal to `var_x`
+(var_z - var_y) == var_x
 
 # --------------------------------------------------
 
 # converting character variable to raw
-char_var_raj <- "Rajesh"
-charToRaw(char_var_raj)
+var_x <- "Rajesh"
+charToRaw(var_x)
