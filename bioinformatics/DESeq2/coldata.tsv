@@ -1,4 +1,4 @@
-	condition	type
+condition	type
 ctrl_1	control	paired-end
 ctrl_2	control	paired-end
 exp_1	treatment	paired-end
