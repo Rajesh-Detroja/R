@@ -29,7 +29,7 @@ library(ashr)
 par(pch = 19)
 
 # read a merged_counts file
-merged_counts = read.table("merged_counts-v2.tsv", quote = "", sep = '\t')
+merged_counts = read.table("merged_counts.tsv", quote = "", sep = '\t')
 
 # Read phenotype sample data
 pheno_data = read.csv("phenotype_data.tsv", quote = "", sep = '\t')
