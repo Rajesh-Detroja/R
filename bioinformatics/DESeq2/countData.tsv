@@ -1,4 +1,4 @@
-gene	ctrl_1	ctrl_2	exp_1	exp_2
+	ctrl_1	ctrl_2	exp_1	exp_2
 geneA	10	11	56	45
 geneB	0	0	128	54
 geneC	42	41	59	41

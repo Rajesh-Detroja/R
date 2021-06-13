@@ -1,5 +1,5 @@
-id	treatment	sex
-ctrl_1	control	male
-ctrl_2	control	famale
-exp_1	treatment	male
-exp_2	treatment	famale
+	condition	type
+ctrl_1	control	paired-end
+ctrl_2	control	paired-end
+exp_1	treatment	paired-end
+exp_2	treatment	paired-end
