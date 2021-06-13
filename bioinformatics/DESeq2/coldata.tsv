@@ -1,5 +1,13 @@
 condition	type
-ctrl_1	control	paired-end
-ctrl_2	control	paired-end
-exp_1	treatment	paired-end
-exp_2	treatment	paired-end
+Control_1	Control	paired-end
+Control_2	Control	paired-end
+Control_3	Control	paired-end
+Control_4	Control	paired-end
+Control_5	Control	paired-end
+Infected_P1_Placenta_1	SARS_CoV_2	paired-end
+Infected_P1_Placenta_2	SARS_CoV_2	paired-end
+Infected_P2_Placenta_1	SARS_CoV_2	paired-end
+Infected_P2_Placenta_2	SARS_CoV_2	paired-end
+Infected_P3_Placenta_1	SARS_CoV_2	paired-end
+Infected_P3_Placenta_2	SARS_CoV_2	paired-end
+Infected_P4_Placenta_1	SARS_CoV_2	paired-end

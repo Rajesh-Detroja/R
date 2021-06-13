@@ -12,10 +12,10 @@ BiocManager::install("DESeq2")
 library(DESeq2)
 
 # Read a merged_counts file
-cts = read.table("Control_Vs_SARS_CoV_2_Placenta.tsv", sep = '\t')
+cts = read.table("cts.tsv", sep = '\t')
 
 # Read phenotype sample data
-coldata = read.csv("Samples.tsv", sep = '\t')
+coldata = read.csv("coldata.tsv", sep = '\t')
 
 # DESeq2 Differential Expression Analysis
 # Create DESeq2 object 
@@ -26,7 +26,7 @@ keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
 # Setting factor level
-dds$condition <- factor( dds$condition, levels = c("Control","SARS_CoV_2"))
+dds$condition <- factor( dds$condition, levels = c("control","treatment"))
 
 # Run Differential expression analysis
 dds <- DESeq(dds)
