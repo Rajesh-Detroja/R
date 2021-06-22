@@ -6,10 +6,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install()
 
-# Settings
-# Reference: https://stackoverflow.com/questions/56241007/non-zero-exit-status-r-3-6-0-biobase
-Sys.setenv(R_INSTALL_STAGED = FALSE)
-
 BiocManager::install("DESeq2")
 
 # Load libraries
