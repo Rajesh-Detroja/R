@@ -8,6 +8,8 @@ BiocManager::install()
 
 BiocManager::install("DESeq2")
 
+## OK
+
 # Load libraries
 library(DESeq2)
 
