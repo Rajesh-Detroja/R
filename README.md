@@ -1,6 +1,10 @@
 # R
 R Programming
 
+##  Using RStudio Server in Windows WSL2
+https://support.rstudio.com/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2
+
+
 ## How to increse cache duration for credential?
 
 The cache duration can be increased through the cache credential helper bundled with git. The command below would set the timeout to an hour:
