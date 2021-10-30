@@ -8,5 +8,3 @@ if(FALSE) {
    This is a second line!
   "
 }
-
-That good.
