@@ -1,7 +1,7 @@
 ## Connect Rstudio and Github
 
 ## Install some linux tools
-# sudo snap install curl
+# sudo apt install curl
 # sudo apt install libcurl4-openssl-dev libssl-dev
 
 ## Install library "usethis"
