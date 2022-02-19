@@ -1,5 +1,4 @@
 ## Connect Rstudio and Github
-## OK
 ## Install some linux tools
 # sudo apt install curl
 # sudo apt install libcurl4-openssl-dev libssl-dev
