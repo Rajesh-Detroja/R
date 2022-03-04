@@ -2,7 +2,6 @@
 ## Install some linux tools
 # sudo apt install curl
 # sudo apt install libcurl4-openssl-dev libssl-dev
-# GREAT
 
 ## Install library "usethis"
 install.packages("usethis")
