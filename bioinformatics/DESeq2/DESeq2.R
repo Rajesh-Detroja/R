@@ -6,6 +6,11 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install()
 
+# sudo apt-get install libxml2-dev
+# sudo apt-get install r-cran-xml
+# sudo apt-get install libcurl4-openssl-dev
+# install.packages("https://cran.r-project.org/src/contrib/Archive/locfit/locfit_1.5-9.4.tar.gz", repos = NULL, type="source")
+
 BiocManager::install("DESeq2")
 
 # Load libraries
