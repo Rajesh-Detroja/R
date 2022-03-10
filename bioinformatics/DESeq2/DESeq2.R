@@ -31,7 +31,7 @@ keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
 # Setting factor level
-dds$condition <- factor( dds$condition, levels = c("control","treatment"))
+dds$condition <- factor( dds$condition, levels = c("Control","SARS_CoV_2"))
 
 # Run Differential expression analysis
 dds <- DESeq(dds)
