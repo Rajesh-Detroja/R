@@ -53,6 +53,6 @@ summary(up)
 write.table(up, file='up_regulated.tsv', quote=FALSE, sep='\t')
 
 # down-regulated genes
-down <- subset(res_sig, log2FoldChange < 0)
+down <- subset(res_sig, log2FoldChange <= -2)
 summary(down)
 write.table(down, file='down_regulated.tsv', quote=FALSE, sep='\t')
