@@ -40,9 +40,6 @@ dds <- DESeq(dds)
 res <- results(dds)
 res
 
-# Specified the coefficient or contrast
-# res <- results(dds, contrast=c("condition","treated","untreated"))
-res <- results(dds, contrast=c("condition","SARS_CoV_2","Control"))
 summary(res)
 
 # identify genes with FDR < 0.05
