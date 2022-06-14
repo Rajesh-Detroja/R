@@ -30,8 +30,10 @@ dds = DESeqDataSetFromMatrix(countData = cts, colData = coldata, design = ~ cond
 keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
-# Setting factor level
-dds$condition <- factor( dds$condition, levels = c("Control","SARS_CoV_2"))
+# Setting factor or reference level
+dds$condition <- relevel(dds$condition, ref = "Control")
+# OR
+# dds$condition <- factor( dds$condition, levels = c("Control","SARS_CoV_2"))
 
 # Run Differential expression analysis
 dds <- DESeq(dds)
