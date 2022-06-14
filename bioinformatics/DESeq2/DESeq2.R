@@ -15,6 +15,7 @@ BiocManager::install("DESeq2")
 
 # Load libraries
 library(DESeq2)
+library(EnhancedVolcano)
 
 # Read a merged_counts file
 cts = read.table("cts.tsv", sep = '\t')
@@ -30,10 +31,8 @@ dds = DESeqDataSetFromMatrix(countData = cts, colData = coldata, design = ~ cond
 keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 
-# Setting factor or reference level
+# Setting reference level
 dds$condition <- relevel(dds$condition, ref = "Control")
-# OR
-# dds$condition <- factor( dds$condition, levels = c("Control","SARS_CoV_2"))
 
 # Run Differential expression analysis
 dds <- DESeq(dds)
@@ -55,3 +54,14 @@ write.table(up, file='up_regulated.tsv', quote=FALSE, sep='\t')
 down <- subset(res_sig, log2FoldChange <= -2)
 summary(down)
 write.table(down, file='down_regulated.tsv', quote=FALSE, sep='\t')
+
+# Volcano Plot
+png("volcano-plot.png", units="px", width=4500, height=4000, res=600)
+EnhancedVolcano(res,
+                lab = rownames(res),
+                x = 'log2FoldChange',
+                y = 'pvalue',
+                pCutoff = 1e-05,
+                FCcutoff = 2,
+                selectLab = c("NA"))
+dev.off()
